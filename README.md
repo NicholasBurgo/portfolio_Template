@@ -126,12 +126,10 @@ If you make something cool with it, let me know! Always interested to see what p
 
 ## Help
 
-If something's broken or you can't figure out how to change something, just Google it or ask ChatGPT lol. Most issues are probably just typos in the config object.
+If something's broken or you can't figure out how to change something, just Google it or ask ChatGPT lol. 
 
 The JavaScript console in your browser will show errors if something's not working right.
 
 ---
 
 That's pretty much it! Hope this helps someone. Took me forever to make but I'm pretty happy with how it turned out.
-
-Also if you're reading this for grading - yes I wrote all the code myself and yes I know it's not perfect but it works and looks decent so ¯\_(ツ)_/¯
