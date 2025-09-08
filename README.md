@@ -4,11 +4,11 @@ Hey! So I made this portfolio website template for my web dev class and figured 
 
 ## What it looks like
 
-It's a single page website with a dark theme (because let's be honest, dark mode is superior). Has sections for your projects, about me, and contact info. The name on the homepage moves around when you hover over it which I think is pretty neat.
+It's a single page website with a dark theme. Has sections for your projects, about me, and contact info. The name on the homepage moves around when you hover over it which I think is pretty neat.
 
 ## How to use it
 
-Just download everything and open index.html in your browser. Most of the stuff you need to change is in the JavaScript part at the bottom - there's a big config object where you can put your own info.
+Just download everything and open index.html in your browser. Most of the stuff you need to change is in the JavaScript part at the bottom.
 
 ## File structure (kinda important)
 
@@ -19,7 +19,7 @@ your-portfolio/
 │   ├── hero-bg.jpg (background for the top part)
 │   ├── projects-bg.jpg (background for projects)
 │   ├── about-bg.jpg (background for about section)
-│   ├── profile.jpg (your face lol)
+│   ├── profile.jpg (your Pov)
 │   └── project screenshots go here too
 └── documents/
     └── your-resume.pdf (if you have one)
@@ -65,13 +65,11 @@ Just replace all that stuff with your actual info. For projects, copy the format
 
 ## Images you need
 
-- **hero-bg.jpg** - big background image for the top (make it look cool)
+- **hero-bg.jpg** - big background image for the top 
 - **projects-bg.jpg** - background for projects section
 - **about-bg.jpg** - background for about section  
-- **profile.jpg** - a decent photo of yourself (doesn't have to be super professional)
+- **profile.jpg** - a profesional 
 - **project screenshots** - pictures of your projects
-
-Tip: Don't use huge images or your site will load super slow. I learned that the hard way.
 
 ## Other stuff to change
 
@@ -100,7 +98,7 @@ You could also use Netlify or Vercel but GitHub Pages is the easiest IMO.
 
 Uses Tailwind CSS for styling (it's pretty good once you get used to it) and Font Awesome for icons. Everything loads from CDNs so you don't need to download anything extra.
 
-The animations are mostly CSS with some JavaScript for the interactive parts. I spent way too much time on that cursor following thing but it looks sick so whatever.
+The animations are mostly CSS with some JavaScript for the interactive parts.
 
 ## Browser compatibility
 
