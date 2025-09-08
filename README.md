@@ -116,11 +116,10 @@ The font is Inter which looks clean. You can change it by updating the Google Fo
 
 - The background images might take a sec to load on slow connections
 - Some of the animations are kinda intensive so might be laggy on really old computers
-- Haven't tested on Internet Explorer (but honestly who cares)
 
 ## Credits
 
-Made this for my CS class project. Used some inspiration from other portfolio sites I found but wrote most of it myself. Feel free to use it for whatever.
+Made this just for fun. Used some inspiration from other portfolio sites I found but wrote most of it myself. Feel free to use it for whatever.
 
 If you make something cool with it, let me know! Always interested to see what people build.
 
