@@ -1,4 +1,4 @@
-# My Portfolio Template
+# My Portfolio Template # My Old website design but still good
 
 Hey! So I made this portfolio website template for my web dev class and figured other students might want to use it too. It's got some pretty cool animations and looks way better than the basic templates you usually find online.
 
@@ -117,7 +117,7 @@ The font is Inter which looks clean. You can change it by updating the Google Fo
 
 ## Credits
 
-Made this just for fun. Used some inspiration from other portfolio sites I found but wrote most of it myself. Feel free to use it for whatever.
+Made this just for fun. Used some inspiration from other portfolio sites. Feel free to use it for whatever.
 
 If you make something cool with it, let me know! Always interested to see what people build.
 
