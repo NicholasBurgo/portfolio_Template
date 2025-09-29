@@ -114,12 +114,6 @@
         cursor: default;
       }
 
-      #name span {
-        display: inline-block;
-        transition: transform 0.2s ease-out;
-        pointer-events: none;
-      }
-
       .image-gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -194,9 +188,9 @@
       <div class="relative z-10">
         <h2 class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-white mb-14 whitespace-nowrap">
           <div id="name" class="flex justify-center gap-0">
-            <span class="text-4xl sm:text-5xl md:text-[5rem]"><span>Y</span><span>O</span><span>U</span><span>R</span></span>
+            <span class="text-4xl sm:text-5xl md:text-[5rem]">YOUR</span>
             <span class="mx-1 sm:mx-2 md:mx-3 lg:mx-5">&nbsp;</span>
-            <span class="text-4xl sm:text-5xl md:text-[5rem]"><span>N</span><span>A</span><span>M</span><span>E</span></span>
+            <span class="text-4xl sm:text-5xl md:text-[5rem]">NAME</span>
           </div>
         </h2>
         <span class="mx-4"></span>
@@ -393,12 +387,12 @@
         // Update name in header and hero section
         document.querySelector('h1').innerHTML = `${portfolioConfig.name.first}<span class="text-blue-500">${portfolioConfig.name.last}</span>`;
         
-        // Update hero name with interactive letters
+        // Update hero name
         const nameElement = document.getElementById('name');
         nameElement.innerHTML = `
-          <span class="text-4xl sm:text-5xl md:text-[5rem]">${portfolioConfig.name.first.split('').map(letter => `<span>${letter}</span>`).join('')}</span>
+          <span class="text-4xl sm:text-5xl md:text-[5rem]">${portfolioConfig.name.first}</span>
           <span class="mx-1 sm:mx-2 md:mx-3 lg:mx-5">&nbsp;</span>
-          <span class="text-4xl sm:text-5xl md:text-[5rem]">${portfolioConfig.name.last.split('').map(letter => `<span>${letter}</span>`).join('')}</span>
+          <span class="text-4xl sm:text-5xl md:text-[5rem]">${portfolioConfig.name.last}</span>
         `;
 
         // Update title
@@ -563,29 +557,6 @@
         }
       });
 
-      // Interactive name animation
-      const name = document.getElementById('name');
-      
-      document.addEventListener('mousemove', (e) => {
-        const letters = name.querySelectorAll('span');
-        letters.forEach(letter => {
-          const rect = letter.getBoundingClientRect();
-          const letterX = rect.left + rect.width / 2;
-          const letterY = rect.top + rect.height / 2;
-
-          const distX = e.clientX - letterX;
-          const distY = e.clientY - letterY;
-          const distance = Math.sqrt(distX ** 2 + distY ** 2);
-          
-          if (distance < 80) {
-            const angle = Math.atan2(distY, distX);
-            const offset = (80 - distance) / 3;
-            letter.style.transform = `translate(${-Math.cos(angle) * offset}px, ${-Math.sin(angle) * offset}px)`;
-          } else {
-            letter.style.transform = 'translate(0, 0)';
-          }
-        });
-      });
 
       // Initialize the portfolio when the page loads
       document.addEventListener('DOMContentLoaded', initializePortfolio);
