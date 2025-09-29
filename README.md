@@ -1,6 +1,6 @@
 # My Portfolio Template # My Old website design but still good
 
-Hey! So I made this portfolio website template for my web dev class and figured other students might want to use it too. It's got some pretty cool animations and looks way better than the basic templates you usually find online.
+.Hey! So I made this portfolio website template for my old portfolio and I thought other students might want to use it too, or build off of it!
 
 ## What it looks like
 
@@ -102,7 +102,7 @@ The animations are mostly CSS with some JavaScript for the interactive parts.
 
 ## Browser compatibility
 
-Works on pretty much everything. Tested on Chrome, Firefox, Safari, and my phone. Should work on older browsers too but some animations might not work.
+Works on pretty much everything.
 
 ## Colors and stuff
 
@@ -113,8 +113,7 @@ The font is Inter which looks clean. You can change it by updating the Google Fo
 ## Known issues
 
 - The background images might take a sec to load on slow connections
-- Some of the animations are kinda intensive so might be laggy on really old computers
-
+  
 ## Credits
 
 Made this just for fun. Used some inspiration from other portfolio sites. Feel free to use it for whatever.
@@ -123,7 +122,7 @@ If you make something cool with it, let me know! Always interested to see what p
 
 ## Help
 
-If something's broken or you can't figure out how to change something, just Google it or ask ChatGPT lol. 
+If something's broken or you can't figure out how to change something, just Google it or ask "ChatGPT". 
 
 The JavaScript console in your browser will show errors if something's not working right.
 
