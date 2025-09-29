@@ -1,4 +1,4 @@
-# My Portfolio Template # My Old website design but still good
+# My Portfolio Template # 
 
 Hey! So I made this portfolio website template for my old portfolio and I thought other students might want to use it too, or build off of it!
 
