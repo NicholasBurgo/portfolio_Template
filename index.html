@@ -180,7 +180,9 @@
       <div class="flex gap-4 text-white text-lg">
         <a href="https://github.com/yourusername" target="_blank" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:your.email@example.com" class="hover:text-blue-400"><i class="fas fa-envelope"></i></a>
+        <button onclick="copyToClipboard('your.email@example.com')" class="hover:text-blue-400 transition" title="Copy email to clipboard">
+          <i class="fas fa-envelope"></i>
+        </button>
       </div>
     </header>
 
@@ -271,13 +273,14 @@
         </div>
 
         <div class="grid sm:grid-cols-3 gap-6">
-          <a href="mailto:your.email@example.com"
-            class="bg-[#0f1320] rounded-xl p-6 border border-white/10 hover:border-blue-400
-                    flex flex-col items-center text-center transition">
+          <div class="bg-[#0f1320] rounded-xl p-6 border border-white/10 hover:border-blue-400
+                    flex flex-col items-center text-center transition cursor-pointer group"
+               onclick="copyToClipboard('your.email@example.com')">
             <i class="fas fa-envelope text-2xl text-blue-400 mb-3"></i>
             <span class="text-white font-semibold">Email</span>
             <span class="text-white/60 text-sm mt-1">your.email@example.com</span>
-          </a>
+            <span class="text-blue-400 text-xs mt-2 opacity-0 group-hover:opacity-100 transition">Click to copy</span>
+          </div>
 
           <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
             class="bg-[#0f1320] rounded-xl p-6 border border-white/10 hover:border-blue-400
@@ -511,6 +514,26 @@
         const viewer = document.getElementById('image-viewer');
         viewer.classList.remove('active');
         document.body.style.overflow = '';
+      }
+
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+          // Create a temporary notification
+          const notification = document.createElement('div');
+          notification.textContent = 'Email copied to clipboard!';
+          notification.className = 'fixed top-20 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg z-50 transition-opacity duration-300';
+          document.body.appendChild(notification);
+          
+          // Remove notification after 2 seconds
+          setTimeout(() => {
+            notification.style.opacity = '0';
+            setTimeout(() => {
+              document.body.removeChild(notification);
+            }, 300);
+          }, 2000);
+        }).catch(function(err) {
+          console.error('Could not copy text: ', err);
+        });
       }
 
       document.getElementById('project-modal-overlay').addEventListener('click', function(e) {
